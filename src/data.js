@@ -6,7 +6,7 @@
 const img = (seed, w = 800, h = 800) => `https://picsum.photos/seed/${seed}/${w}/${h}`;
 
 export const brand = {
-  name: 'JD Game Zone',
+  name: 'Logo',
   tagline: 'Everyday goods, chosen well',
 };
 
