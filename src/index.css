@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+
+::selection {
+  @apply bg-brass-100 text-ink;
+}
+
+/* thin scrollbar for horizontal rails */
+.rail::-webkit-scrollbar {
+  height: 6px;
+}
+.rail::-webkit-scrollbar-thumb {
+  background: #E7E3DC;
+  border-radius: 999px;
+}
+
+.container-px {
+  @apply px-4 sm:px-6 lg:px-10;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink text-paper px-6 py-3 text-sm font-medium tracking-wide transition-colors hover:bg-pine-600;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/15 bg-transparent px-6 py-3 text-sm font-medium tracking-wide text-ink transition-colors hover:border-ink/40;
+}
+
+.section-heading {
+  @apply font-display text-2xl sm:text-3xl text-ink font-semibold tracking-tight;
+}
+
+/* Minimal display treatment: no serif, just a slightly tighter, heavier weight
+   than body copy so headings and prices still read as distinct. */
+.font-display {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
